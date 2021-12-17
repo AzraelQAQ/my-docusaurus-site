@@ -21,7 +21,7 @@ module.exports = {
             title: '远方',
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/logo.svg',
+                src: 'img/Avatar.jpg',
             },
             items: [{
                     type: 'doc',
