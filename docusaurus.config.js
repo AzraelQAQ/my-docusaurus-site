@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: '远方',
-    tagline: 'Dinosaurs are cool',
+    tagline: 'Believe in yourself',
     url: 'https://your-docusaurus-test-site.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -44,6 +44,12 @@ module.exports = {
                     items: [{
                         label: 'Tutorial',
                         to: '/docs/intro',
+                    }, {
+                        label: '还没想好放什么就放一个百度吧',
+                        to: 'https://www.baidu.com',
+                    }, {
+                        label: '这里就放一个仇老师我什么时候可以去找你玩呀',
+                        to: 'https://www.dianping.com/haerbin',
                     }, ],
                 },
                 {
