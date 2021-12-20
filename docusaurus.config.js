@@ -18,7 +18,7 @@ module.exports = {
     },
     themeConfig: {
         navbar: {
-            title: '远方',
+            title: '诺言',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/Avatar.jpg',
