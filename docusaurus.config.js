@@ -24,7 +24,7 @@ module.exports = {
                 src: 'img/Avatar.jpg',
             },
             items: [
-                {type: 'doc',docId: 'intro',position: 'left',label: 'love',to:'/love'},
+                {type: 'doc',docId: 'love',position: 'left',label: 'love',},
                 {type: 'doc',docId: 'intro',position: 'left',label: 'Tutorial',},
                 {to: '/blog', label: 'Blog', position: 'left',},
                 {type: 'localeDropdown',position:'right',},
