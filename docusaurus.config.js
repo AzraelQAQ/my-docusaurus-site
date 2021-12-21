@@ -26,18 +26,18 @@ module.exports = {
             },
             items: [
                 {
-                    to: '/Love/Intro',    // ./Love/Intro.md
+                    to: '/Love/intro',    // ./Love/intro.md
                     label: 'Love',
                     position: 'left',
                     activeBaseRegex: `/Love/`,
                 },
                 {
-                    to: '/Work/Intro',    // ./Work/Intro.md
+                    to: '/Work/intro',    // ./Work/intro.md
                     label: 'Work',
                     position: 'left',
                     activeBaseRegex: `/Work/`,
                 }, {
-                    to: '/docs/Intro',    // ./docs/Intro.md
+                    to: '/docs/intro',    // ./docs/intro.md
                     label: 'Docs',
                     position: 'left',
                     activeBaseRegex: `/docs/`,
