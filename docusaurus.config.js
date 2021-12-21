@@ -29,8 +29,8 @@ module.exports = {
                     position: 'left',
                     label: 'Tutorial',
                 },
-                {type: 'localeDropdown'},
                 { to: '/blog', label: 'Blog', position: 'left' },
+                {type: 'localeDropdown',position:'right'},
                 {
                     href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
                     label: 'GitHub',
