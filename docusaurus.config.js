@@ -18,17 +18,28 @@ module.exports = {
     },
     themeConfig: {
         navbar: {
+            hideOnScroll: true,
             title: '远方',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/Avatar.jpg',
             },
             items: [{
-                    type: 'doc',
-                    docId: 'intro',
-                    position: 'left',
-                    label: 'Tutorial',
-                },
+                to: '/docs/Intro',    // ./docs/Intro.md
+                label: 'Docs Title',
+                position: 'left',
+                activeBaseRegex: `/docs/`,
+            },{
+                to: '/test-QAQ/Intro',    // ./docs/Intro.md
+                label: 'test-QAQ',
+                position: 'left',
+                activeBaseRegex: `/test-QAQ/`,
+            },{
+                to: '/love/Intro',    // ./docs/Intro.md
+                label: 'love',
+                position: 'left',
+                activeBaseRegex: `/love/`,
+            },
                 { to: '/blog', label: 'Blog', position: 'left' },
                 {
                     href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
@@ -88,13 +99,36 @@ module.exports = {
             darkTheme: darkCodeTheme,
         },
     },
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id:'test-QAQ',
+                path:'test-QAQ',
+                routeBasePath:'test-QAQ',
+                sidebarPath: require.resolve('./sidebars.js'),
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id:'love',
+                path:'love',
+                routeBasePath:'love',
+                sidebarPath: require.resolve('./sidebars.js'),
+            },
+        ],
+    ],
     presets: [
         [
             '@docusaurus/preset-classic',
             {
                 docs: {
+                    routeBasePath: 'docs',
+                    path: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
+                    lastVersion: 'current',
+                    onlyIncludeVersions: ['current'],
                     editUrl: 'https://github.com/AzraelQAQ/my-docusaurus-site/tree/master/',
                 },
                 blog: {
