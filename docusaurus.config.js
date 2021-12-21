@@ -14,7 +14,7 @@ module.exports = {
     projectName: 'docusaurus', // Usually your repo name.
     i18n: {
         defaultLocale: "zh-Hans",
-        locales: ["zh-Hans"]
+        locales: ["zh-Hans","en-US"]
     },
     themeConfig: {
         navbar: {
@@ -29,6 +29,7 @@ module.exports = {
                     position: 'left',
                     label: 'Tutorial',
                 },
+                {type: 'localeDropdown'},
                 { to: '/blog', label: 'Blog', position: 'left' },
                 {
                     href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
