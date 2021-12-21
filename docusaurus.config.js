@@ -23,19 +23,12 @@ module.exports = {
                 alt: 'My Site Logo',
                 src: 'img/Avatar.jpg',
             },
-            items: [{
-                    type: 'doc',
-                    docId: 'intro',
-                    position: 'left',
-                    label: 'Tutorial',
-                },
-                { to: '/blog', label: 'Blog', position: 'left' },
-                {type: 'localeDropdown',position:'right'},
-                {
-                    href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
-                    label: 'GitHub',
-                    position: 'right',
-                },
+            items: [
+                {type: 'love',docId: 'intro',position: 'left',label: 'love',},
+                {type: 'doc',docId: 'intro',position: 'left',label: 'Tutorial',},
+                {to: '/blog', label: 'Blog', position: 'left',},
+                {type: 'localeDropdown',position:'right',},
+                {href: 'https://github.com/AzraelQAQ/my-docusaurus-site',label: 'GitHub',position: 'right',},
             ],
         },
         footer: {
