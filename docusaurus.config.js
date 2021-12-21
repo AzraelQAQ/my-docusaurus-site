@@ -25,20 +25,20 @@ module.exports = {
                 src: 'img/Avatar.jpg',
             },
             items: [{
+                to: '/love/Intro',    // ./docs/Intro.md
+                label: 'Love',
+                position: 'left',
+                activeBaseRegex: `/love/`,
+            },{
                 to: '/docs/Intro',    // ./docs/Intro.md
                 label: 'Docs Title',
                 position: 'left',
                 activeBaseRegex: `/docs/`,
             },{
-                to: '/test-QAQ/Intro',    // ./docs/Intro.md
-                label: 'test-QAQ',
+                to: '/work/Intro',    // ./docs/Intro.md
+                label: 'Work',
                 position: 'left',
-                activeBaseRegex: `/test-QAQ/`,
-            },{
-                to: '/love/Intro',    // ./docs/Intro.md
-                label: 'love',
-                position: 'left',
-                activeBaseRegex: `/love/`,
+                activeBaseRegex: `/work/`,
             },
                 { to: '/blog', label: 'Blog', position: 'left' },
                 {
@@ -104,9 +104,9 @@ module.exports = {
         [
             '@docusaurus/plugin-content-docs',
             {
-                id:'test-QAQ',
-                path:'test-QAQ',
-                routeBasePath:'test-QAQ',
+                id:'work',
+                path:'work',
+                routeBasePath:'work',
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
