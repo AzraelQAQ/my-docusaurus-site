@@ -24,22 +24,24 @@ module.exports = {
                 alt: 'My Site Logo',
                 src: 'img/Avatar.jpg',
             },
-            items: [{
-                to: '/docs/Intro',    // ./docs/Intro.md
-                label: 'Docs Title',
-                position: 'left',
-                activeBaseRegex: `/docs/`,
-            },{
-                to: '/test-QAQ/Intro',    // ./docs/Intro.md
-                label: 'test-QAQ',
-                position: 'left',
-                activeBaseRegex: `/test-QAQ/`,
-            },{
-                to: '/love/Intro',    // ./docs/Intro.md
-                label: 'love',
-                position: 'left',
-                activeBaseRegex: `/love/`,
-            },
+            items: [
+                {
+                    to: '/Love/Intro',    // ./Love/Intro.md
+                    label: 'Love',
+                    position: 'left',
+                    activeBaseRegex: `/Love/`,
+                },
+                {
+                    to: '/Work/Intro',    // ./Work/Intro.md
+                    label: 'Work',
+                    position: 'left',
+                    activeBaseRegex: `/Work/`,
+                }, {
+                    to: '/docs/Intro',    // ./docs/Intro.md
+                    label: 'Docs',
+                    position: 'left',
+                    activeBaseRegex: `/docs/`,
+                },
                 { to: '/blog', label: 'Blog', position: 'left' },
                 {
                     href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
@@ -51,46 +53,46 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Docs',
-                    items: [{
-                        label: 'Tutorial',
-                        to: '/docs/intro',
-                    }, {
-                        label: '还没想好放什么就放一个百度吧',
-                        to: 'https://www.baidu.com',
-                    }, {
-                        label: '这里就放一个仇老师我什么时候可以去找你玩呀',
-                        to: 'https://www.dianping.com/haerbin',
-                    }, ],
+                title: 'Docs',
+                items: [{
+                    label: 'Tutorial',
+                    to: '/docs/intro',
+                }, {
+                    label: '还没想好放什么就放一个百度吧',
+                    to: 'https://www.baidu.com',
+                }, {
+                    label: '这里就放一个仇老师我什么时候可以去找你玩呀',
+                    to: 'https://www.dianping.com/haerbin',
+                },],
+            },
+            {
+                title: 'Community',
+                items: [{
+                    label: 'Stack Overflow',
+                    href: 'https://stackoverflow.com/questions/tagged/docusaurus',
                 },
                 {
-                    title: 'Community',
-                    items: [{
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/docusaurus',
-                        },
-                    ],
+                    label: 'Discord',
+                    href: 'https://discordapp.com/invite/docusaurus',
                 },
                 {
-                    title: 'More',
-                    items: [{
-                            label: 'Blog',
-                            to: '/blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
-                        },
-                    ],
+                    label: 'Twitter',
+                    href: 'https://twitter.com/docusaurus',
                 },
+                ],
+            },
+            {
+                title: 'More',
+                items: [{
+                    label: 'Blog',
+                    to: '/blog',
+                },
+                {
+                    label: 'GitHub',
+                    href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
+                },
+                ],
+            },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
@@ -103,18 +105,18 @@ module.exports = {
         [
             '@docusaurus/plugin-content-docs',
             {
-                id:'test-QAQ',
-                path:'test-QAQ',
-                routeBasePath:'test-QAQ',
+                id: 'Work',
+                path: 'Work',
+                routeBasePath: 'Work',
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
         [
             '@docusaurus/plugin-content-docs',
             {
-                id:'love',
-                path:'love',
-                routeBasePath:'love',
+                id: 'Love',
+                path: 'Love',
+                routeBasePath: 'Love',
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
