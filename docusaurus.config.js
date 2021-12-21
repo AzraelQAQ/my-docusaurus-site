@@ -87,6 +87,7 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
+                    id:'intro',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/AzraelQAQ/my-docusaurus-site/tree/master/',
@@ -98,6 +99,18 @@ module.exports = {
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
+                },
+            },
+        ],
+    ],
+    presets:[
+        [
+            '@docusaurus/preset-classic',
+            {
+                docs: {
+                    id:'love',path:'love',
+                    routeBasePath:'love',
+                    sidebarPath: require.resolve('./sidebars.js'),
                 },
             },
         ],
