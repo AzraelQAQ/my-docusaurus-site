@@ -14,20 +14,27 @@ module.exports = {
     projectName: 'docusaurus', // Usually your repo name.
     i18n: {
         defaultLocale: "zh-Hans",
-        locales: ["zh-Hans","en-US"]
+        locales: ["zh-Hans"]
     },
     themeConfig: {
         navbar: {
-            title: '诺言',
+            title: '远方',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/Avatar.jpg',
             },
-            items: [
-                {type: 'doc',docId: 'intro',position: 'left',label: 'Tutorial',},
-                {to: '/blog', label: 'Blog', position: 'left',},
-                {type: 'localeDropdown',position:'right',},
-                {href: 'https://github.com/AzraelQAQ/my-docusaurus-site',label: 'GitHub',position: 'right',},
+            items: [{
+                    type: 'doc',
+                    docId: 'intro',
+                    position: 'left',
+                    label: 'Tutorial',
+                },
+                { to: '/blog', label: 'Blog', position: 'left' },
+                {
+                    href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
+                    label: 'GitHub',
+                    position: 'right',
+                },
             ],
         },
         footer: {
@@ -86,7 +93,6 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    id:'intro',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/AzraelQAQ/my-docusaurus-site/tree/master/',
