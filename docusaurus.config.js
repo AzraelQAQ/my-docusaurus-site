@@ -24,7 +24,6 @@ module.exports = {
                 src: 'img/Avatar.jpg',
             },
             items: [
-                {type: 'doc',docId: 'love',position: 'left',label: 'love',},
                 {type: 'doc',docId: 'intro',position: 'left',label: 'Tutorial',},
                 {to: '/blog', label: 'Blog', position: 'left',},
                 {type: 'localeDropdown',position:'right',},
@@ -99,18 +98,6 @@ module.exports = {
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
-                },
-            },
-        ],
-    ],
-    presets:[
-        [
-            '@docusaurus/preset-classic',
-            {
-                docs: {
-                    id:'love',path:'love',
-                    routeBasePath:'love',
-                    sidebarPath: require.resolve('./sidebars.js'),
                 },
             },
         ],
