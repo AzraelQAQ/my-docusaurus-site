@@ -29,69 +29,69 @@ module.exports = {
                 label: 'Love',
                 position: 'left',
                 activeBaseRegex: `/love/`,
-            },{
+            }, {
                 to: '/docs/Intro',    // ./docs/Intro.md
                 label: 'Docs Title',
                 position: 'left',
                 activeBaseRegex: `/docs/`,
-            },{
+            }, {
                 to: '/work/Intro',    // ./docs/Intro.md
                 label: 'Work',
                 position: 'left',
                 activeBaseRegex: `/work/`,
             },
-                { to: '/blog', label: 'Blog', position: 'left' },
-                {
-                    href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
-                    label: 'GitHub',
-                    position: 'right',
-                },
+            { to: '/blog', label: 'Blog', position: 'left' },
+            {
+                href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
+                label: 'GitHub',
+                position: 'right',
+            },
             ],
         },
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Docs',
-                    items: [{
-                        label: 'Tutorial',
-                        to: '/docs/intro',
-                    }, {
-                        label: '还没想好放什么就放一个百度吧',
-                        to: 'https://www.baidu.com',
-                    }, {
-                        label: '这里就放一个仇老师我什么时候可以去找你玩呀',
-                        to: 'https://www.dianping.com/haerbin',
-                    },
+                title: 'Docs',
+                items: [{
+                    label: 'Tutorial',
+                    to: '/docs/intro',
+                }, {
+                    label: '还没想好放什么就放一个百度吧',
+                    to: 'https://www.baidu.com',
+                }, {
+                    label: '这里就放一个仇老师我什么时候可以去找你玩呀',
+                    to: 'https://www.dianping.com/haerbin',
+                },
                 ],
+            },
+            {
+                title: 'Community',
+                items: [{
+                    label: 'Stack Overflow',
+                    href: 'https://stackoverflow.com/questions/tagged/docusaurus',
                 },
                 {
-                    title: 'Community',
-                    items: [{
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/docusaurus',
-                        },
-                    ],
+                    label: 'Discord',
+                    href: 'https://discordapp.com/invite/docusaurus',
                 },
                 {
-                    title: 'More',
-                    items: [{
-                            label: 'Blog',
-                            to: '/blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
-                        },
-                    ],
+                    label: 'Twitter',
+                    href: 'https://twitter.com/docusaurus',
                 },
+                ],
+            },
+            {
+                title: 'More',
+                items: [{
+                    label: 'Blog',
+                    to: '/blog',
+                },
+                {
+                    label: 'GitHub',
+                    href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
+                },
+                ],
+            },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
@@ -104,18 +104,18 @@ module.exports = {
         [
             '@docusaurus/plugin-content-docs',
             {
-                id:'work',
-                path:'work',
-                routeBasePath:'work',
+                id: 'work',
+                path: 'work',
+                routeBasePath: 'work',
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
         [
             '@docusaurus/plugin-content-docs',
             {
-                id:'love',
-                path:'love',
-                routeBasePath:'love',
+                id: 'love',
+                path: 'love',
+                routeBasePath: 'love',
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
@@ -125,7 +125,10 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
+                    routeBasePath: 'docs',
+                    path: 'docs',
                     sidebarPath: require.resolve('./sidebars.js'),
+                    lastVersion: 'current',
                     // Please change this to your repo.
                     editUrl: 'https://github.com/AzraelQAQ/my-docusaurus-site/tree/master/',
                 },
