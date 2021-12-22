@@ -25,21 +25,21 @@ module.exports = {
                 src: 'img/Avatar.jpg',
             },
             items: [{
-                to: '/love/Intro',    // ./docs/Intro.md
+                to: '/love/Intro',    // ./love/Intro.md
                 label: 'Love',
                 position: 'left',
                 activeBaseRegex: `/love/`,
-            }, {
-                to: '/docs/Intro',    // ./docs/Intro.md
-                label: 'Docs Title',
-                position: 'left',
-                activeBaseRegex: `/docs/`,
-            }, {
-                to: '/work/Intro',    // ./docs/Intro.md
+            },{
+                to: '/work/Intro',    // ./work/Intro.md
                 label: 'Work',
                 position: 'left',
                 activeBaseRegex: `/work/`,
-            },
+            }, {
+                to: '/docs/Intro',    // ./docs/Intro.md
+                label: 'Docs',
+                position: 'left',
+                activeBaseRegex: `/docs/`,
+            }, 
 
             { to: '/blog', label: 'Blog', position: 'left', },
             { type: 'search', position: 'right', },
