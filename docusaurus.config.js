@@ -40,7 +40,10 @@ module.exports = {
                 position: 'left',
                 activeBaseRegex: `/work/`,
             },
-            { to: '/blog', label: 'Blog', position: 'left' },
+
+            { to: '/blog', label: 'Blog', position: 'left', },
+            { type: 'search', position: 'right', },
+            
             {
                 href: 'https://github.com/AzraelQAQ/my-docusaurus-site',
                 label: 'GitHub',
