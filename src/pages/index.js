@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/love/intro">
-            小仇同学，你什么时候带我去吃好吃的啊🍉🍇🍓🥐🥯🍞🍳🍖🍟🍕🥪🥙🌯🌮🫕🍱🍛🍲🍤🧁🎂🍰🍿🍼🥂🍻🍷🍹
+            仇老师，你什么时候带我去吃好吃的啊🍉🍇🍓🥐🥯🍞🍳🍖🍟🍕🥪🥙🌯🌮🫕🍱🍛🍲🍤🧁🎂🍰🍿🍼🥂🍻🍷🍹
           </Link>
         </div>
       </div>
