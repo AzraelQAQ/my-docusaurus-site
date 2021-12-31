@@ -1,34 +1,40 @@
 ---
-id: CNG_template
-title: template
-slug: CNG_template.html
+id: CNG_51
+title: 首页
+sidebar_position: 1
 tags:
   - 拾柒
   - 中国一生必去的50个地方
 ---
 
-## 来自 Docusaurus 的问候
+## 旅游攻略
 
-您准备好为您的开源项目创建文档站点了吗？
+aaa
 
-### 标题
+### 最佳旅行时间
 
-标题将显示在右上方的目录中
+aaa
 
-以便用户无需向下滚动，甚至无需阅读更多内容，便可了解此页的梗概。
+### 行李准备指南
 
-### 默认只有 h2 和 h3 展示在目录中
+aaa
 
-You can configure the TOC heading levels either per-document or in the theme configuration.
+### 周边住宿指南
 
-良好的标题间距，让文章结构更清晰。
+aaa
 
-- lists will help you
-- present the key points
-- that you want your users to remember
-  - and you may nest them
-    - multiple times
+### 旅游路线推荐
 
-### Custom id headers {#custom-id}
+aaa
 
-With `{#custom-id}` syntax you can set your own header id.
+### ！！！注意事项
+
+aaa
+
+## 景点详情
+
+aaa
+
+## 仇老师专属
+
+aaa
