@@ -17,7 +17,7 @@ tags:
 
 以便用户无需向下滚动，甚至无需阅读更多内容，便可了解此页的梗概。
 
-### 默认只有 h2 和 h3 展示在目录中。
+### 默认只有 h2 和 h3 展示在目录中
 
 You can configure the TOC heading levels either per-document or in the theme configuration.
 
