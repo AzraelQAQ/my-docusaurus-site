@@ -4,29 +4,32 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/Valentine8.eps').default,
+    title: '仇老师与姜同学的日常',
+    to: '/love/intro',
+    Svg: require('../../static/img/042-in-love.svg').default,
     description: (
       <>
-        love文档的介绍
+        记录仇老师与小姜同学的日常生活
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: '工作相关文档',
+    to: '/work/intro',
+    Svg: require('../../static/img/044-in-love.svg').default,
     description: (
       <>
-        工作文档的介绍
+        幼师与QA的相关工作文档整理
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: '普通文档',
+    to: '/docs/intro',
+    Svg: require('../../static/img/018-drawing.svg').default,
     description: (
       <>
-        普通文档的介绍
+        就是一个普普通通的文档啦，不知道要整理什么
       </>
     ),
   },
