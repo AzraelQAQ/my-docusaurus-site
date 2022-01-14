@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: '仇老师与姜同学的日常',
-    to: '/love/intro',
+    href: '/love/intro',
     Svg: require('../../static/img/042-in-love.svg').default,
     description: (
       <>
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: '工作相关文档',
-    to: '/work/intro',
+    href: '/work/intro',
     Svg: require('../../static/img/044-worker.svg').default,
     description: (
       <>
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: '普通文档',
-    to: '/docs/intro',
+    href: '/docs/intro',
     Svg: require('../../static/img/018-drawing.svg').default,
     description: (
       <>
@@ -35,12 +35,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description, to}) {
+function Feature({Svg, title, description, href}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
+        <a href={href}>
         <Svg className={styles.featureSvg} alt={title} />
-        <a href={to}></a>
+        </a>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
