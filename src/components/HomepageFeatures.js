@@ -5,7 +5,6 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: '仇老师与姜同学的日常',
-    to: '/love/intro',
     Svg: require('../../static/img/042-in-love.svg').default,
     description: (
       <>
@@ -15,7 +14,6 @@ const FeatureList = [
   },
   {
     title: '工作相关文档',
-    to: '/work/intro',
     Svg: require('../../static/img/044-in-love.svg').default,
     description: (
       <>
@@ -25,7 +23,6 @@ const FeatureList = [
   },
   {
     title: '普通文档',
-    to: '/docs/intro',
     Svg: require('../../static/img/018-drawing.svg').default,
     description: (
       <>
