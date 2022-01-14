@@ -56,14 +56,14 @@ module.exports = {
             links: [{
                 title: 'Docs',
                 items: [{
-                    label: 'Tutorial',
+                    label: 'Love',
+                    to: '/love/intro',
+                }, {
+                    label: 'Work',
+                    to: '/work/intro',
+                }, {
+                    label: 'Docs',
                     to: '/docs/intro',
-                }, {
-                    label: '还没想好放什么就放一个百度吧',
-                    to: 'https://www.baidu.com',
-                }, {
-                    label: '这里就放一个仇老师我什么时候可以去找你玩呀',
-                    to: 'https://www.dianping.com/haerbin',
                 },
                 ],
             },
