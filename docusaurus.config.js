@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: '只因你是我的满心欢喜',
+    title: '远方',
     tagline: 'Believe in yourself',
     url: 'https://your-docusaurus-test-site.com',
     baseUrl: '/',
