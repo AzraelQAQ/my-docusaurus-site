@@ -9,22 +9,22 @@ const FeatureList = [
     Svg: require('../../static/img/042-in-love.svg').default,
     description: (
       <>
-        记录仇老师与小姜同学的日常生活
+        记录白羊与金牛的相爱相杀
       </>
     ),
   },
   {
-    title: '工作相关文档',
+    title: '工作与学习',
     href: '/work/intro',
     Svg: require('../../static/img/044-worker.svg').default,
     description: (
       <>
-        幼师与QA的相关工作文档整理
+        记录了幼师与测试工程师相关工作与学习的文档整理
       </>
     ),
   },
   {
-    title: '普通文档',
+    title: '奇奇怪怪',
     href: '/docs/intro',
     Svg: require('../../static/img/018-drawing.svg').default,
     description: (
